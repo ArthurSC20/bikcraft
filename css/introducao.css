@@ -1,0 +1,109 @@
+.introducao-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2.5rem;
+  max-width: 75rem;
+  box-sizing: border-box;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introducao-bg {
+  background-color: #000;
+  box-shadow: inset 0 -7.5rem #fff;
+}
+
+.introducao {
+  align-self: end;
+  padding-bottom: 12.5rem;
+}
+
+.introducao-container img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.introducao-titulo {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  line-height: 1.125;
+  font-family: "roboto";
+  font-weight: 600;
+}
+.introducao-titulo span {
+  color: #ffbb00;
+}
+
+.introducao-texto {
+  color: #b2b2b2;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: "roboto";
+  font-weight: 400;
+}
+
+.introducao a {
+  display: inline-block;
+  justify-self: start;
+  font-size: 1.125rem;
+  color: #332200;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  line-height: 1.33;
+  font-weight: bold;
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width: 1200px) {
+  .introducao-titulo {
+    font-size: 3rem;
+  }
+
+  .introducao-texto {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background-color: #111;
+    padding-top: 2.5rem;
+    box-shadow: inset 0 -60px #fff;
+  }
+  .introducao-titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .introducao-container {
+    grid-template-columns: 1fr;
+  }
+  .introducao {
+    padding-bottom: 0;
+  }
+  .introducao-container img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao a {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+}
