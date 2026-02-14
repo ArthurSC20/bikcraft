@@ -47,27 +47,6 @@
   font-weight: 400;
 }
 
-.introducao a {
-  display: inline-block;
-  justify-self: start;
-  font-size: 1.125rem;
-  color: #332200;
-  background: linear-gradient(#ffbf00, #f2a50c);
-  border-radius: 0.25rem;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  line-height: 1.33;
-  font-weight: bold;
-  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
-  font-family: "Poppins";
-  font-weight: 600;
-}
-
-.introducao a:hover {
-  background: linear-gradient(#ffb60d, #e59317);
-}
-
 @media (max-width: 1200px) {
   .introducao-titulo {
     font-size: 3rem;
@@ -98,12 +77,5 @@
   .introducao-container img {
     height: 300px;
     width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .introducao a {
-    font-size: 1rem;
-    padding: 0.75rem 1rem;
   }
 }
