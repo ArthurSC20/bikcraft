@@ -4,11 +4,7 @@
 }
 
 .bicicletas h2 {
-  max-width: 75rem;
-  margin: 0 auto;
   margin-bottom: 2.5rem;
-  box-sizing: border-box;
-  padding: 0 1.25rem;
 }
 
 .bicicletas ul {

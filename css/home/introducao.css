@@ -1,13 +1,7 @@
-.introducao-container {
+.introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 2.5rem;
-  max-width: 75rem;
-  box-sizing: border-box;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .introducao-bg {
@@ -20,7 +14,7 @@
   padding-bottom: 12.5rem;
 }
 
-.introducao-container img {
+.introducao img {
   height: 100%;
   object-fit: cover;
   border-radius: 0.25rem;
@@ -49,13 +43,13 @@
   .introducao-titulo {
     margin-bottom: 1rem;
   }
-  .introducao-container {
+  .introducao {
     grid-template-columns: 1fr;
   }
   .introducao {
     padding-bottom: 0;
   }
-  .introducao-container img {
+  .introducao img {
     height: 300px;
     width: 100%;
   }
