@@ -1,0 +1,123 @@
+.bicicleta-bg {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+
+.bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.bicicleta-imagem {
+  display: grid;
+}
+
+.bicicleta-imagem span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 1.25rem;
+  background: var(--cor-12);
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.bicicleta-imagem img {
+  grid-area: 1/1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bicicleta-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+.bicicleta-conteudo h2 {
+  margin-bottom: 1.25rem;
+  grid-column: 1/-1;
+  position: relative;
+}
+
+.bicicleta-conteudo h2::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.5rem;
+  background-color: var(--cor-p1);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.bicicleta-conteudo p {
+  grid-column: 1/-1;
+  margin-bottom: 2rem;
+}
+
+.bicicleta-conteudo li {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.bicicleta-conteudo ul {
+  display: grid;
+  gap: 1rem;
+}
+
+.bicicleta-conteudo a {
+  place-self: end;
+}
+
+li > img {
+  height: 24px;
+}
+
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 0.75rem;
+  background: url("../../img/icones/seta.svg");
+  transition: transform 0.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 800px) {
+  .bicicleta {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .bicicleta-bg {
+    background: var(--cor-11);
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicleta-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .bicicleta ul {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .bicicleta a {
+    place-self: start;
+  }
+}
