@@ -50,6 +50,10 @@
   box-sizing: border-box;
 }
 
+.titulo {
+  background: url(../../img/dec/top-right.svg) no-repeat top right 1.25rem;
+}
+
 .titulo p {
   margin-bottom: 0.25rem;
 }
